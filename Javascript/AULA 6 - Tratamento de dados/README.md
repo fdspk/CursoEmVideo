@@ -11,9 +11,15 @@
 <p>String:
 <ul><li>'', "" ou ``</li></ul></p>
 
-<p>Mudança de string para número
+<p>Mudança de string para número:
 <ul>
   <li>Number.parseInt(s) ou so parseInt(s)</li>
   <li>Number.parseFloat(s) ou so parseFloat(s)</li>
   <li>Number(s)</li>
 </ul></p>
+
+<p>Tratamento de decimais:
+<ul><li>n.toFixed(x) em que x é o número de casas decimais que se deseja exibir</li></ul></p>
+
+<p>Trocar . para , :
+<ul><li>n.(alguma função, ex:toFixed).replace('.',',')</li></ul></p>
