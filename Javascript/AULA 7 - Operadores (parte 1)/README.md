@@ -18,3 +18,20 @@
 <li>+, -</li>
 </ul> 
 </p>
+
+<p>Auto atribuição e simplificação de operadores
+<ul><li>n=n+4  == n+=4</li>
+<li>n=n-4  == n-=4</li>
+<li>n=n*4  == n*=4</li>
+<li>n=n/4  == n/=4</li>
+<li>n=n**4  == n**=4</li>
+<li>n=n%4  == n%=4</li>
+</ul></p>
+
+<p>Incremento e decremento (pré e pós)
+<ul>
+<li>x++</li>
+<li>x--</li>
+<li>++x/li>
+<li>--x</li>
+</ul></p>
