@@ -26,17 +26,28 @@
 
         /* Number.parseInt(n) ou so parseInt(n)
         Number.parseFloat(n)*/
-        /*
-            var n1= Number.parseInt(window.prompt('Digite um número inteiro'))
-            var n2= Number.parseInt(window.prompt('Digite outro número inteiro'))
-            var soma= n1+n2
-            alert('A soma dos números é igual a = '+ soma)
-        
-            var f1= Number.parseFloat(window.prompt('Digite um número real'))
-            var f2= Number.parseFloat(window.prompt('Digite outro número real'))
-            var soma2= f1+f2
-            alert('A soma dos números é igual a = '+ soma2)
+
+        /*Tratamento de dados com numero de casas decimais e virgula
+        n1.toFixed(2) //2 casas decimais
+        n1.replace('.',',') //deve vir dps do toFixed pra funcionar
         */
+
+        var n1 = Number.parseInt(window.prompt('Digite um número inteiro'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número inteiro'))
+        var soma = n1 + n2
+        alert('A soma dos números é igual a = ' + soma)
+
+        var f1 = Number.parseFloat(window.prompt('Digite um número real'))
+        var f2 = Number.parseFloat(window.prompt('Digite outro número real'))
+        var soma2 = f1 + f2
+        alert('A soma dos números é igual a = ' + soma2.toFixed(2).replace('.', ','))
+
+        /*Currency
+        n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+                                                                'USD'
+                                                                'EUR'*/
+        alert('A soma dos números em real é igual a = ' + soma2.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}))
+
 
         /*Outra forma: utilizar só o Number*/
 
@@ -50,21 +61,24 @@
         String(n)
         n.toString()
         */
-        soma3=String(num1)+String(num2)
+        soma3 = String(num1) + String(num2)
         alert('A concatenação dos números é igual a = ' + soma3)
         alert('O tamanho da String é ' + soma3.length) //lenght
 
         /*template string
         `${String}`
         
-        obs:${} == placeholder*/  
-        soma3=num1+num2
+        obs:${} == placeholder*/
+        soma3 = num1 + num2
         alert(`Essa mensagem foi feita com placeholder: a soma entre ${num1} e ${num2} é igual a ${soma3}`)
 
         /*Outros metodos
         s.toUpperCase()
         s.toLowerCase()
+        ver ex04.html
         */
+
+
 
     </script>
 </body>
