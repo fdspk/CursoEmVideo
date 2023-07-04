@@ -1,5 +1,5 @@
 # Conceitos
-<p>Operadores relacionais:<ul>
+<p>Operadores relacionais (resultado true ou false):<ul>
 <li>></li>
 <li><</li>
 <li>>=</li>
