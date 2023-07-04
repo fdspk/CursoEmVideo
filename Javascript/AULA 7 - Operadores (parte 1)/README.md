@@ -9,3 +9,12 @@
 <li>** ->potencia</li>
 </ul>
 </p>
+<p>
+  Ordem de precedencia
+<ul>
+<li>()</li>
+<li>**</li>
+<li>*, /, %</li>
+<li>+, -</li>
+</ul> 
+</p>
