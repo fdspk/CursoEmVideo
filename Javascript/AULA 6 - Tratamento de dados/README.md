@@ -10,3 +10,10 @@
 
 <p>String:
 <ul><li>'', "" ou ``</li></ul></p>
+
+<p>Mudança de string para número
+<ul>
+  <li>Number.parseInt(s) ou so parseInt(s)</li>
+  <li>Number.parseFloat(s) ou so parseFloat(s)</li>
+  <li>Number(s)</li>
+</ul></p>
