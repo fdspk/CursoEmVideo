@@ -27,4 +27,15 @@
 <p>Máscara de moeda (obs: substituir 'BRL' por 'USD' para dolar e 'EUR' para euro):
 <ul><li>n.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})</li></ul></p>
 
+<p>Placeholder (usar dentro da String com uso de ``):<ul><li>${variavel}</li></ul></p>
+
+<p>Modificar caracteres na string
+<ul>
+  <li>s.toUpperCase() ->maiusculas</li>
+  <li>s.toLowerCase() ->minusculas</li>
+</ul>
+</p>
+
+<p>Tamanho da string:<ul><li>s.length</li></ul></p>
+
                                                             
