@@ -32,5 +32,5 @@
 <ul>
   <li>Teste Lógico? O que acontece se der true : O que acontece se der false</li></ul>
   Ex: média >= 7 ? 'Aprovado' : 'Reprovado'
-  Ex2: var x=8; var res = x%2 ?5:3  --> res==5 (true)
+  <p>Ex2: var x=8; var res = x%2 ?5:3  --> res==5 (true)</p>
   </p>
