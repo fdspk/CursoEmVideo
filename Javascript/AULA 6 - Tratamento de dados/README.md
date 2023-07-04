@@ -23,3 +23,8 @@
 
 <p>Trocar . para , :
 <ul><li>n.(alguma função, ex:toFixed).replace('.',',')</li></ul></p>
+
+<p>Máscara de moeda (obs: substituir 'BRL' por 'USD' para dolar e 'EUR' para euro):
+<ul><li>n.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})</li></ul></p>
+
+                                                            
