@@ -30,8 +30,8 @@
 
 <p>Incremento e decremento (pré e pós)
 <ul>
+<li>++x</li>
+<li>--x</li>
 <li>x++</li>
 <li>x--</li>
-<li>++x/li>
-<li>--x</li>
 </ul></p>
