@@ -39,6 +39,9 @@
 <p>Tamanho da string:<ul><li>s.length</li></ul></p>
 
 <p>Escrever no documento:
-<ul><li>document.write()</li></ul></p>
+<ul><li>document.write('string que pode conter tags html')</li></ul></p>
+
+<p>Escrever no numa tag pegando seu id:
+<ul><li>document.getElementById("id").innerHtml('string que pode conter tags html')</li></ul></p>
 
                                                             
