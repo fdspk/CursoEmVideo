@@ -38,4 +38,7 @@
 
 <p>Tamanho da string:<ul><li>s.length</li></ul></p>
 
+<p>Escrever no documento:
+<ul><li>document.write()</li></ul></p>
+
                                                             
