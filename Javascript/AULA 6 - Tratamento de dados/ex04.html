@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="oi">Olá</h1>
+    <script>
+        var nome=window.prompt("Qual é o seu nome?")
+        var texto=window.prompt(`Olá ${nome} escreva um texto bem bacana!`)
+        document.getElementById("oi").innerHTML+=` <em>${nome}</em>, `
+        document.write("<h1>Seu texto em caixa alta= "+ texto.toUpperCase()+"<h1>")
+        document.write("<h2>Seu texto em caixa baixa= "+ texto.toLowerCase()+"<h2>")
+        document.write(`<h3>Seu texto tem ${texto.length} letras</h3>`)
+    </script>
+</body>
+</html>
