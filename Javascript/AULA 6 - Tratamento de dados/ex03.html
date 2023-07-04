@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex02</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Lorem ipsum dolor sit.</p>
+
+    <script>
+        //var n1=window.prompt('Digite um número')//string
+        //var n2=window.prompt('Digite outro número')//string
+        //var soma= n1+n2
+        //alert('A soma dos números é igual a = '+ soma) // 1+2=12 :O -> o + tem o efeito de CONCATENAÇÃO(string+string) E ADIÇÃO(number+number) -> como forçar o tipo? -> window.prompt retorna STRING
+
+        /* Number.parseInt(n) ou so parseInt(n)
+        Number.parseFloat(n)*/
+        /*
+            var n1= Number.parseInt(window.prompt('Digite um número inteiro'))
+            var n2= Number.parseInt(window.prompt('Digite outro número inteiro'))
+            var soma= n1+n2
+            alert('A soma dos números é igual a = '+ soma)
+        
+            var f1= Number.parseFloat(window.prompt('Digite um número real'))
+            var f2= Number.parseFloat(window.prompt('Digite outro número real'))
+            var soma2= f1+f2
+            alert('A soma dos números é igual a = '+ soma2)
+        */
+
+        /*Outra forma: utilizar só o Number*/
+
+        var num1 = Number(window.prompt('Digite um número'))
+        var num2 = Number(window.prompt('Digite outro número'))
+        var soma3 = num1 + num2
+        alert('A soma dos números é igual a = ' + soma3)
+
+
+        /*Numero para string
+        String(n)
+        n.toString()
+        */
+        soma3=String(num1)+String(num2)
+        alert('A concatenação dos números é igual a = ' + soma3)
+        alert('O tamanho da String é ' + soma3.length) //lenght
+
+        /*template string
+        `${String}`
+        
+        obs:${} == placeholder*/  
+        soma3=num1+num2
+        alert(`Essa mensagem foi feita com placeholder: a soma entre ${num1} e ${num2} é igual a ${soma3}`)
+
+        /*Outros metodos
+        s.toUpperCase()
+        s.toLowerCase()
+        */
+
+    </script>
+</body>
+
+</html>
