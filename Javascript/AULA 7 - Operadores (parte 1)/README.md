@@ -1,6 +1,6 @@
 # Operadores
 <p>
-<ul style="text-decoration:none">
+<ul>
 <li>+ -> soma</li>
 <li>- -> subtracao</li>
 <li>* -> multiplicacao</li>
