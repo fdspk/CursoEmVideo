@@ -4,7 +4,7 @@
 <p><ul>
 <li>por tag: document.getElementsByTagName='p'[0]</li>
 <li>por id: document.getElementById('id')</li>
-<li>por nome: document.getElementsByName('nome')</li>
+<li>por nome: document.getElementsByName('nome')[0]</li>
 <li>por classe: document.getElementsByClassName('classe')[0]</li>
 <li>por seletor: document.querySelector('div#id')</li></ul>
 </p>
