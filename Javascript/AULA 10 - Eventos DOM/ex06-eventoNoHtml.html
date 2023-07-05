@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - eventos DOM</title>
+    <style>
+        div#area{
+            background: green;
+            color:white;  
+            width:200px;
+            height:200px;
+            line-height: 200px; 
+            text-align:center; 
+            font-size:20pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja...</div> <!--on+nome do evento-->
+    <script>
+        /*EVENTOS (alguns)
+        mouseenter - entra na div e dispara evento
+        mousemove - continua mover mouse dentro da div e dispara varias vezes o evento
+        mousedown - clica e segura mouse
+        mouseup - levanta dedo do mouse
+        click - aperta rapido mouse
+        mouseout - sai da div*/
+
+        /*FUNCOES (executadas quando ocorre o evento)
+        function ação(parametros){
+            bloco
+        }*/
+        var a=document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.innerText='Clicou!'
+            a.style.background='red'
+        }
+
+        function entrar(){
+            a.innerText="Entrou!"
+        }
+
+        function sair(){
+            a.innerText="Saiu!"
+            a.style.background='green'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:aliceblue;
+
+    }
+    .container{
+        padding:10px;
+        background-color: white;
+        box-shadow: rgb(193, 217, 238) 10px 10px;
+        margin:0 auto;
+        max-width:500px;
+        display:grid;
+    }
+    .container-input{
+        width:300px;
+        display: inline-grid;
+        margin:0 auto;
+    }
+    #r1, #r2, #r3, #r4{
+        margin-bottom:20px;
+    }
+    .titulo{
+        text-align:center;
+        color:rgb(6, 6, 150);
+    }
+    input:first-child{
+        margin-top:10px;
+    }
+    
+</style>
+
+<body>
+       
+    <h1 class="titulo">Calculadora</h1>
+    <section class="container">
+    <div class="container-input">
+    <input type="number" name="txtn1" id="txtn1">+
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="r1">Resultado</div>
+
+    <input type="number" name="txtn3" id="txtn3">-
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" value="Subtrair" onclick="sub()">
+    <div id="r2">Resultado</div>
+
+    <input type="number" name="txtn5" id="txtn5">x
+    <input type="number" name="txtn6" id="txtn6">
+    <input type="button" value="Multiplicar" onclick="mult()">
+    <div id="r3">Resultado</div>
+
+    <input type="number" name="txtn7" id="txtn7">/
+    <input type="number" name="txtn8" id="txtn8">
+    <input type="button" value="Dividir" onclick="divide()">
+    <div id="r4">Resultado</div>
+
+</div>
+</section>
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var res = document.getElementById('r1')
+            var s = n1 + n2
+            res.innerHTML = `A soma dos números ${n1} e ${n2} é igual a ${s}`
+        }    
+        function sub() {
+            var tn3 = document.getElementById('txtn3')
+            var tn4 = document.getElementById('txtn4')
+            var n3 = Number(tn3.value)
+            var n4 = Number(tn4.value)
+            var res = document.getElementById('r2')
+            var s = n3 - n4
+            res.innerHTML = `A subtração dos números ${n3} e ${n4} é igual a ${s}`
+        }   
+        function mult() {
+            var tn5 = document.getElementById('txtn5')
+            var tn6 = document.getElementById('txtn6')
+            var n5 = Number(tn5.value)
+            var n6 = Number(tn6.value)
+            var res = document.getElementById('r3')
+            var m = n5 * n6
+            res.innerHTML = `A multiplicação dos números ${n5} e ${n6} é igual a ${m}`
+        } 
+        function divide() {
+            var tn7 = document.getElementById('txtn7')
+            var tn8 = document.getElementById('txtn8')
+            var n7 = Number(tn7.value)
+            var n8 = Number(tn8.value)
+            var res = document.getElementById('r4')
+            var d = n7 / n8
+            res.innerHTML = `A divisão dos números ${n7} e ${n8} é igual a ${d}`
+        } 
+     
+        </script>
+</body>
+
+</html>
