@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Sua nacionalidade BR</h1>
+    Insira seu país: <input type="text" name="txtpais" id="txtpais"> 
+    <input type="button" value="Verificar" onclick="nacionalidade()">
+    <p id="resultado"></p>
+
+    <script>
+
+        function nacionalidade() {
+            var pais = document.getElementById('txtpais').value.toUpperCase()
+            
+            var res =document.getElementById('resultado')
+            //res.innerHTML=pais
+           if (pais=='BRASIL' || pais=='BRAZIL') {
+                
+                res.innerHTML = `Sua nacionalidade é <strong>Brasileira</strong>`
+            }
+            else{
+                res.innerHTML = `Sua nacionalidade é <strong>Estrangeira</strong>`
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>
