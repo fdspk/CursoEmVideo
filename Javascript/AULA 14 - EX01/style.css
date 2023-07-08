@@ -21,8 +21,13 @@ body{
         text-align: center;
         font-style: italic;
     }
-    .flex, #msg{
-        display: flex;
-        justify-content: center;
+
+    #msg{
+        display:flex;
+    }
+    .flex{
+        display:flex;
         flex-direction: column;
+        gap:10px;
+        margin:10px;
     }
