@@ -1,5 +1,5 @@
 # CursoEmVideo
-<p>:white_large_square: Javascript [40h] 91% COMPLETO 31/34 Steps</p>
+<p>✅Javascript [40h] 100% COMPLETO 34/34 Steps</p>
 <p>:white_large_square: Java Básico [40 Horas]</p>
 <p>:white_large_square: HTML5 [40 Horas]</p>
 <p>:white_large_square: Java POO [40 Horas]</p>
