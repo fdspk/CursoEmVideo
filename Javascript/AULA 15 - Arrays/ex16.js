@@ -29,3 +29,5 @@ let valores=[7,11,2,3]
 let numsete=valores.indexOf(7)//procura onde está a posicao do valor 7
 let numum=valores.indexOf(1)// retorna -1 = nao existe
 console.log(`O 7 está na posição ${numsete} e o 1 está na ${numum}`)
+
+//OBS: valores no array em JS podem ser heterogeneos: ex - let valores=['ola',2,3.1]
