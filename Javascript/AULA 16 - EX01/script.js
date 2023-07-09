@@ -2,7 +2,7 @@ let array = []
 let n = document.getElementById('txtn')
 
 function isCadastrado(n){
-    return array.indexOf(n)
+    return array.indexOf(n)!=-1
 }
 
 function adicionar() {
@@ -10,12 +10,12 @@ function adicionar() {
     if (n.value == '' || Number(n.value) < 1 || Number(n.value) > 100) {
         alert('Favor inserir número válido')
     }
-    else if(isCadastrado(Number(n.value))!=-1){
+    else if(isCadastrado(Number(n.value))){
         alert('Número já foi cadastrado')
     }
     else {
         let res = document.getElementById('res')
-        array[array.length] = Number(n.value)
+        array.push(Number(n.value))
         let item = document.createElement('option')
         item.text = array[array.length - 1]
         res.appendChild(item)
